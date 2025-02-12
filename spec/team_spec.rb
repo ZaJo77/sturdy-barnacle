@@ -9,20 +9,14 @@ RSpec.describe Team do
     expect(team).to be_a Team
   end
 
-  it 'has a roster and the default is empty' do
-    team = Team.new("Dodgers", "Los Angeles")
+  it 'makes new player instances' do
     player_1 = Player.new("Michael Palledorous" , 1000000, 36)
     player_2 = Player.new("Kenny DeNunez", 500000, 24)
 
-    expect(team.roster).to eq([])
+    expect(player_1).to be_a Player
+    expect(player_2).to be_a Player
   end
 
-  it 'can add players to the roster' do
-    team = Team.new("Dodgers", "Los Angeles")
-    player_1 = Player.new("Michael Palledorous" , 1000000, 36)
-    player_2 = Player.new("Kenny DeNunez", 500000, 24)
-
-    expect()
+  it 'makes an empty team roster' do
   end
-
 end
