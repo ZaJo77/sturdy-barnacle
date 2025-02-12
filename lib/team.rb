@@ -5,4 +5,11 @@ class Team
     @roster = roster
     @player_count = player_count
   end
+
+  def roster
+      
+  end
+
+  def add_player(player)
+  end
 end
